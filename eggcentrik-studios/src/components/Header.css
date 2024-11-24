@@ -1,0 +1,12 @@
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #000; /* Change to match your design */
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}

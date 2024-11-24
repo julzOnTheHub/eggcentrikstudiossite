@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Header from './components/Header';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="app-container">
+            <Header />
+            <main className="main-content">
+                <h1 className="welcome-title">Welcome to Eggcentrik Studios</h1>
+                <p className="description">
+                    Creator of "Recoil Control: The Adventures of Rico Che (demo)"
+                </p>
+            </main>
+            <footer className="footer">
+                <p>&copy; 2024 Eggcentrik Studios LLC. All rights reserved.</p>
+                <p>
+                    Follow:
+                    <a href="https://tiktok.com/@eggcentrik" className="social-link">TikTok</a>
+                </p>
+            </footer>
+        </div>
+    );
 }
+
 
 export default App;
