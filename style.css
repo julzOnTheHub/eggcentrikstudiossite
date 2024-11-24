@@ -3,7 +3,7 @@
 /* Make the background light gray */
 body {
     background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
+    font-family: Calibri, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -11,8 +11,7 @@ body {
 /* Style the heading (h1) */
 h1 {
     color: #333;
-    text-align: center;
-    margin-top: 20px;
+    margin: 10px 20px;
 }
 
 /* Style paragraphs (p) */
@@ -32,3 +31,49 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+
+
+/* Header styling */
+header {
+    background-color: #000f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 400px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+    footer a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
