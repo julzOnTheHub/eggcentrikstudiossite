@@ -1,12 +1,14 @@
 .header-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 20px;
-    background-color: #000; /* Change to match your design */
+    padding: 25px 0px 25px 25px;
+    background-color: #000;
+    height: auto; /* Ensure it doesn’t constrain the image */
 }
 
 .logo {
-    max-width: 100%;
+    width: 300px;
     height: auto;
+    object-fit: cover; /* Or use cover */
 }
