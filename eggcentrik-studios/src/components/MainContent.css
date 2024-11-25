@@ -1,11 +1,12 @@
 .main-content {
-    display: flex; /* Enables Flexbox */
-    flex-direction: column; /* Stacks items vertically */
-    justify-content: flex-start;
-    align-items: center; /* Centers the content horizontally */
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Prevents overflow */
-    background: linear-gradient(to bottom, #1a1a1a, #000);
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center; /* Center content horizontally */
+    width: 100%; /* Allow full width */
+    height: auto; /* Prevent height restrictions */
+    padding: 20px; /* Optional: Add breathing room */
+    background: linear-gradient(to bottom, #1a1a1a, #000); /* Background design */
 }
 
 .welcome-title {
@@ -22,6 +23,8 @@
 .hero {
     width: 100%;
     height: auto; /* Allow the image to size naturally */
+    margin-bottom: 100px; /* Add spacing below the main image */
+    margin-top: 50px; /* Add spacing above the main image */
 }
 
 .hero-image {
@@ -37,5 +40,7 @@
 
     .hero-image {
         max-height: calc(100vh - 50px); /* Adjust for smaller screens */
+        margin-bottom: 50px; /* Reduce spacing on smaller screens */
+        margin-top: 25px; /* Add spacing above the main image */
     }
 }
