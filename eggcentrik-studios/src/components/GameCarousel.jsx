@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './GameCarousel.css';
 
 function GameCarousel() {
@@ -24,7 +24,13 @@ function GameCarousel() {
     const [currentIndex, setCurrentIndex] = useState(1); // Start at the first real image
     const [isAnimating, setIsAnimating] = useState(false);
 
-    const slideDuration = 500; // Duration of the sliding transition in ms
+    const slideDuration = 1250; // Duration of the sliding transition in ms
+
+    const handleNext = useCallback(() => {
+        if (isAnimating) return;
+        setIsAnimating(true);
+        setCurrentIndex((prevIndex) => prevIndex + 1);
+    }, [isAnimating]);
 
     // Automatically cycle through images
     useEffect(() => {
@@ -32,19 +38,7 @@ function GameCarousel() {
             handleNext();
         }, 5500); // Change every 5.5 seconds
         return () => clearInterval(interval); // Cleanup on unmount
-    }, []);
-
-    const handleNext = () => {
-        if (isAnimating) return;
-        setIsAnimating(true);
-        setCurrentIndex((prevIndex) => prevIndex + 1);
-    };
-
-    const handlePrev = () => {
-        if (isAnimating) return;
-        setIsAnimating(true);
-        setCurrentIndex((prevIndex) => prevIndex - 1);
-    };
+    }, [handleNext]);
 
     // Reset position when reaching cloned slides
     useEffect(() => {

@@ -10,7 +10,6 @@
 
 .carousel-slides {
     display: flex; /* Align images in a row */
-    transition: transform 1s ease-in-out; /* Smooth sliding transition */
     transform: translateX(calc(-100% * var(--current-index, 0))); /* Adjust position based on active index */
 }
 
@@ -21,10 +20,6 @@
     object-fit: contain; /* Ensure the whole image fits */
     margin-bottom: 20px; /* Add spacing below the main image */
 }
-
-    .carousel-image.active {
-        opacity: 1;
-    }
 
 .carousel-dots {
     position: absolute;
@@ -47,3 +42,26 @@
     .dot.active {
         background-color: darkgrey;
     }
+
+
+@media (max-width: 768px) {
+    .carousel-container {
+        max-width: 100%; /* Allow the container to resize to the screen width */
+        margin-bottom: 40px; /* Reduce spacing below the carousel */
+    }
+
+    .carousel-image {
+        max-width: 90%; /* Ensure images don’t overflow horizontally */
+        margin: 0 auto 10px; /* Center images and add smaller spacing */
+    }
+
+    .carousel-dots {
+        bottom: 5px; /* Adjust dot position for smaller screens */
+        gap: 10px; /* Reduce the gap between dots */
+    }
+
+    .dot {
+        width: 8px; /* Smaller dots for mobile screens */
+        height: 8px;
+    }
+}
