@@ -1,0 +1,41 @@
+.main-content {
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: flex-start;
+    align-items: center; /* Centers the content horizontally */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevents overflow */
+    background: linear-gradient(to bottom, #1a1a1a, #000);
+}
+
+.welcome-title {
+    font-family: 'Segoe UI';
+    font-size: 3rem; /* Adjust font size as needed */
+    color: #373737; /* Light gray text color */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Space between the title and the image */
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 1); /* Optional: Add text depth */
+    font-weight: 100; /* Slimmer font weight */
+    letter-spacing: 12px; /* Adds more space between letters */
+}
+
+.hero {
+    width: 100%;
+    height: auto; /* Allow the image to size naturally */
+}
+
+.hero-image {
+    max-width: 80%; /* Ensures the image doesn't overflow horizontally */
+    max-height: calc(100vh - 80px); /* Ensures the image fits within the viewport minus the title height */
+    object-fit: contain; /* Makes sure the whole image is visible */
+}
+
+@media (max-width: 768px) {
+    .welcome-title {
+        font-size: 2rem;
+    }
+
+    .hero-image {
+        max-height: calc(100vh - 50px); /* Adjust for smaller screens */
+    }
+}

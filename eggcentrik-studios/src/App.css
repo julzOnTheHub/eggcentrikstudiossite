@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #000; /* Match your header or main content background */
     color: #333;
 }
 
@@ -11,17 +11,14 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0; /* Ensure no margin around the container */
+    padding: 0; /* Ensure no padding around the container */
 }
 
 .main-content {
     text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-}
-
-.welcome-title {
-    font-size: 2.5rem;
-    color: #222;
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
 }
 
 .description {
@@ -34,10 +31,10 @@ body {
     text-align: center;
     padding: 10px;
     background-color: #222;
-    color: #fff;
+    color: #adadad;
 }
 
     .footer .social-link {
-        color: #fff;
+        color: #d4e9ff;
         text-decoration: underline;
     }

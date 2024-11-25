@@ -1,17 +1,13 @@
 import './App.css';
 import React from 'react';
 import Header from './components/Header';
+import MainContent from './components/MainContent';
 
 function App() {
     return (
         <div className="app-container">
             <Header />
-            <main className="main-content">
-                <h1 className="welcome-title">welcome to the studio</h1>
-                <p className="description">
-                    Creator of "Recoil Control: The Adventures of Rico Che (demo)"
-                </p>
-            </main>
+            <MainContent />
             <footer className="footer">
                 <p>&copy; 2024 Eggcentrik Studios LLC. All rights reserved.</p>
                 <p>
