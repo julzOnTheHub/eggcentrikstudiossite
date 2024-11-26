@@ -1,7 +1,7 @@
 .carousel-container {
     position: relative;
-    width: 100%; /* Full width of the parent container */
-    max-width: 1200px; /* Optional: Limit the width */
+    max-width: 55vw;
+    height: auto;
     margin: 0 auto; /* Center carousel horizontally */
     margin-bottom: 80px; /* Add spacing below the main image */
     overflow: hidden; /* Prevent extra scrolling */
@@ -47,7 +47,6 @@
 
 @media (max-width: 768px) {
     .carousel-container {
-        max-width: 90vw; /* Allow the container to resize to the screen width */
         margin-bottom: 40px; /* Reduce spacing below the carousel */
     }
 
