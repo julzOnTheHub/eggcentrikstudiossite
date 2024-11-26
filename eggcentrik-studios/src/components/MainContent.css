@@ -3,7 +3,7 @@
     flex-direction: column; /* Stack items vertically */
     justify-content: flex-start; /* Align content at the top */
     align-items: center; /* Center content horizontally */
-    width: 100%; /* Allow full width */
+    max-width: 100vw; /* Allow full width */
     height: auto; /* Prevent height restrictions */
     padding: 20px; /* Optional: Add breathing room */
     background: linear-gradient(to bottom, #1a1a1a, #000); /* Background design */

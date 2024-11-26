@@ -17,7 +17,8 @@
     flex: 0 0 100%; /* Each image takes full width */
     width: 100%;
     height: auto; /* Preserve aspect ratio */
-    object-fit: contain; /* Ensure the whole image fits */
+    object-fit: cover; /* Ensure the whole image fits */
+    max-height: 60vh; /* Optional: Limit height to 60% of the viewport */
     margin-bottom: 20px; /* Add spacing below the main image */
 }
 
@@ -46,13 +47,18 @@
 
 @media (max-width: 768px) {
     .carousel-container {
-        max-width: 100%; /* Allow the container to resize to the screen width */
+        max-width: 90vw; /* Allow the container to resize to the screen width */
         margin-bottom: 40px; /* Reduce spacing below the carousel */
     }
 
+    .carousel-slides {
+        gap: 0; /* Prevent any unintended spacing between images */
+    }
+
     .carousel-image {
+        max-height: 40vh; /* Scale down images on smaller screens */
         max-width: 90%; /* Ensure images don’t overflow horizontally */
-        margin: 0 auto 10px; /* Center images and add smaller spacing */
+        object-fit: contain; /* Maintain aspect ratio */
     }
 
     .carousel-dots {
@@ -61,7 +67,7 @@
     }
 
     .dot {
-        width: 8px; /* Smaller dots for mobile screens */
-        height: 8px;
+        width: 3px; /* Smaller dots for mobile screens */
+        height: 3px;
     }
 }
