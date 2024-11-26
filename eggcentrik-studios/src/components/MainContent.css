@@ -10,7 +10,7 @@
 }
 
 .welcome-title {
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; /* Fallback fonts */
     font-size: 3rem; /* Adjust font size as needed */
     color: #373737; /* Light gray text color */
     text-align: center; /* Center the text */
