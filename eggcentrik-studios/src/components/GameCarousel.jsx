@@ -13,6 +13,8 @@ function GameCarousel() {
         `${process.env.PUBLIC_URL}/images/screenshots/screenshot8.png`,
         `${process.env.PUBLIC_URL}/images/screenshots/screenshot9.png`,
         `${process.env.PUBLIC_URL}/images/screenshots/screenshot10.png`,
+        `${process.env.PUBLIC_URL}/images/screenshots/screenshot11.png`,
+        `${process.env.PUBLIC_URL}/images/screenshots/screenshot12.png`,
     ];
 
     const extendedScreenshots = [
