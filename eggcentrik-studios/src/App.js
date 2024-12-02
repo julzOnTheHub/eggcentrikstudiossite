@@ -19,6 +19,10 @@ function App() {
                     <a href="https://www.youtube.com/@eggcentrikstudios" className="social-link">
                         YouTube
                     </a>
+                    {' | '}
+                    <a href="https://x.com/eggcentrik" className="social-link">
+                        X (Twitter)
+                    </a>
                 </p>
             </footer>
         </div>
