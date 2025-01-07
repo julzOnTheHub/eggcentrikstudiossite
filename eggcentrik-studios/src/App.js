@@ -12,8 +12,8 @@ function App() {
                 <p>&copy; 2024 Eggcentrik Studios LLC. All rights reserved.</p>
                 <p>
                     Follow:
-                    <a href="https://tiktok.com/@eggcentrikstudios" className="social-link">
-                        TikTok
+                    <a href="https://www.reddit.com/r/RecoilControlGame/" className="social-link">
+                        Reddit
                     </a>
                     {' | '}
                     <a href="https://www.youtube.com/@eggcentrikstudios" className="social-link">
